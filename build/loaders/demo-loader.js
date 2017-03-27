@@ -1,3 +1,4 @@
 module.exports = function(content) {
-  return `export default {hello: 'world'}`;
+  var contentNoNewline = content.replace(/\n$/, '');
+  return `export default {hello: '${contentNoNewline}'}`;
 };
