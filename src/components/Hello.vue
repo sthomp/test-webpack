@@ -22,7 +22,7 @@
 
 <script>
 
-import Demo from '../demo.txt';
+import Demo from '../person.proto';
 
 console.log(Demo);
 

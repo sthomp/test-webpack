@@ -59,8 +59,9 @@ module.exports = {
         }
       },
       {
-        test: /\.txt$/,
-        loader: 'demo-loader',
+        test: /\.proto$/,
+        loaders: ['json-loader', 'demo-loader'],
+
       },
     ]
   }
