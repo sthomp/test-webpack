@@ -25,6 +25,11 @@ module.exports = {
       '@': resolve('src')
     }
   },
+  resolveLoader: {
+    alias: {
+      'demo-loader': path.join(__dirname, './loaders/demo-loader'),
+    },
+  },
   module: {
     rules: [
       {
@@ -52,7 +57,11 @@ module.exports = {
           limit: 10000,
           name: utils.assetsPath('fonts/[name].[hash:7].[ext]')
         }
-      }
+      },
+      {
+        test: /\.txt$/,
+        loader: 'demo-loader',
+      },
     ]
   }
 }

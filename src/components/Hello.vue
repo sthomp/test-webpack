@@ -21,6 +21,11 @@
 </template>
 
 <script>
+
+import Demo from '../demo.txt';
+
+console.log(Demo);
+
 export default {
   name: 'hello',
   data () {
